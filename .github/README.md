@@ -1,6 +1,6 @@
 <h1 align="center"><b>✨𝗚𝗼𝗿𝗶𝗹 𝗠𝘂𝘇𝗶𝗸✨</b></h1>
 
-<h4 align="center">Goril Müzik Sizlere Kaliteli Müzik ve video izleme deneyimi sunar br> ...All Credit Goes To Team Yukki...</h4>
+<h4 align="center">Goril Müzik Sizlere Kaliteli Müzik ve video izleme deneyimi sunar br> </h4>
 
 <p align="center"><a href="@gorilmusical"><img src="https://iili.io/JQdc5rb.jpg" width="400"></a></p>
 
