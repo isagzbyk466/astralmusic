@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-
-# Kanged By © @Dr_Asad_Ali
-# Rocks © @Shayri_Music_Lovers
-# Owner Asad Ali
-# Harshit Sharma
-# All rights reserved. Yukki
-
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -19,7 +9,7 @@ from AasthaMusicBot.utils.database import is_music_playing, music_on
 from AasthaMusicBot.utils.decorators import AdminRightsCheck
 
 # Commands
-RESUME_COMMAND = get_command("RESUME_COMMAND")
+RESUME_COMMAND = get_command("devam et")
 
 
 @app.on_message(filters.command(RESUME_COMMAND) & filters.group & ~BANNED_USERS)
