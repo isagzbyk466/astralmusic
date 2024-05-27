@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-
-# Kanged By © @Dr_Asad_Ali
-# Rocks © @Shayri_Music_Lovers
-# Owner Asad Ali
-# Harshit Sharma
-# All rights reserved. Yukki
-
 from pyrogram import filters
 from pyrogram.errors import MessageNotModified
 from pyrogram.types import (
@@ -58,7 +48,7 @@ from AasthaMusicBot.utils.inline.settings import (
 from AasthaMusicBot.utils.inline.start import private_panel
 
 ### Command
-SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")
+SETTINGS_COMMAND = get_command("ayarlar")
 
 
 @app.on_message(filters.command(SETTINGS_COMMAND) & filters.group & ~BANNED_USERS)
@@ -323,58 +313,58 @@ async def playmode_ans(client, CallbackQuery, _):
             Group = True
             buttons = playmode_users_markup(_, True)
         playmode = await get_playmode(CallbackQuery.message.chat.id)
-        if playmode == "Direct":
+        if playmode == "tek":
             Direct = True
         else:
             Direct = None
         playty = await get_playtype(CallbackQuery.message.chat.id)
-        if playty == "Everyone":
+        if playty == "herkes":
             Playtype = None
         else:
             Playtype = True
         buttons = playmode_users_markup(_, Direct, Group, Playtype)
-    if command == "MODECHANGE":
+    if command == "mod değiştir":
         try:
             await CallbackQuery.answer(_["set_cb_6"], show_alert=True)
         except:
             pass
         playmode = await get_playmode(CallbackQuery.message.chat.id)
-        if playmode == "Direct":
+        if playmode == "doğrudan":
             await set_playmode(CallbackQuery.message.chat.id, "Inline")
             Direct = None
         else:
             await set_playmode(CallbackQuery.message.chat.id, "Direct")
             Direct = True
         chatmode = await get_chatmode(CallbackQuery.message.chat.id)
-        if chatmode == "Group":
+        if chatmode == "Grup":
             Group = True
         else:
             Group = None
         playty = await get_playtype(CallbackQuery.message.chat.id)
-        if playty == "Everyone":
+        if playty == "herkes":
             Playtype = False
         else:
             Playtype = True
         buttons = playmode_users_markup(_, Direct, Group, Playtype)
-    if command == "PLAYTYPECHANGE":
+    if command == "değiştir oynat":
         try:
             await CallbackQuery.answer(_["set_cb_6"], show_alert=True)
         except:
             pass
         playty = await get_playtype(CallbackQuery.message.chat.id)
-        if playty == "Everyone":
+        if playty == "herkes":
             await set_playtype(CallbackQuery.message.chat.id, "Admin")
             Playtype = False
         else:
             await set_playtype(CallbackQuery.message.chat.id, "Everyone")
             Playtype = True
         playmode = await get_playmode(CallbackQuery.message.chat.id)
-        if playmode == "Direct":
+        if playmode == "drek":
             Direct = True
         else:
             Direct = None
         chatmode = await get_chatmode(CallbackQuery.message.chat.id)
-        if chatmode == "Group":
+        if chatmode == "Grup":
             Group = True
         else:
             Group = None
@@ -424,10 +414,10 @@ async def authusers_mar(client, CallbackQuery, _):
                 [
                     [
                         InlineKeyboardButton(
-                            text=_["BACK_BUTTON"], callback_data=f"AU"
+                            text=_["geri butonu"], callback_data=f"AU"
                         ),
                         InlineKeyboardButton(
-                            text=_["CLOSE_BUTTON"],
+                            text=_["geri butonu"],
                             callback_data=f"close",
                         ),
                     ]
@@ -484,7 +474,7 @@ async def cleanmode_mark(client, CallbackQuery, _):
         return await CallbackQuery.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(buttons)
         )
-    if command == "COMMANDELMODE":
+    if command == "komut modu":
         cle = None
         sta = None
         if await is_cleanmode_on(CallbackQuery.message.chat.id):
