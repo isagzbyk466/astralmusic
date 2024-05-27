@@ -1,14 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-
-# Kanged By © @Dr_Asad_Ali
-# Rocks © @Shayri_Music_Lovers
-# Owner Asad Ali
-# Harshit Sharma
-# All rights reserved. Yukki
-
-
 from typing import Union
 
 from pyrogram import filters, types
@@ -23,7 +12,7 @@ from AasthaMusicBot.utils.decorators.language import language, languageCB
 from AasthaMusicBot.utils.inline.help import help_back_markup, private_help_panel
 
 ### Command
-HELP_COMMAND = get_command("HELP_COMMAND")
+HELP_COMMAND = get_command("yardım")
 
 
 @app.on_message(filters.command(HELP_COMMAND) & filters.private & ~BANNED_USERS)
