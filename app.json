@@ -1,14 +1,14 @@
 {
-    "name": "Aastha Music Bot ",
-    "description": "Made With Source Of Yukki Gban Added, Customize Button Added Play Audio And Video Song On Telegram Groups.",
-    "logo": "https://telegra.ph/file/d8db78924684b505c3048.jpg",
+    "name": "Goril Music Bot ",
+    "description": "Özelleştirme Düğmesi Eklenmiştir, Ses ve Video Şarkılarını Telegram Gruplarında Çalma Özelliği Eklenmiştir.",
+    "logo": "https://iili.io/JQdc5rb.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Alexa",
-    "aasthamusicbot",
-    "alexamusicbot",
+    "Goril",
+    "gorilmusicbot",
+    "gorilmusicbot",
     "pyrogram"
     ],
     "stack": "container",
@@ -24,7 +24,7 @@
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
-        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "description": "Eğer isterseniz, asistanınızın tüm sohbetlerden belirli bir süre sonra otomatik olarak ayrılmasını sağlayabilirsiniz.",
         "value": "True",
         "required": true
       },
@@ -39,7 +39,7 @@
         "required": true
       },
       "MUSIC_BOT_NAME": {
-        "description": "A name for your Music Bot. Please don't use ascii characters",
+        "description": "Müzik Botu için bir isim. Lütfen ASCII karakterlerini kullanmayın.",
         "value": "",
         "required": true
       },
@@ -76,12 +76,12 @@
         "SUPPORT_CHANNEL": {
             "description": "if you have channel, then fill the channel link",
             "required": true,
-            "value": "https://t.me/AsadSupport"
+            "value": "https://t.me/"
         },
         "START_IMG_URL": {
             "description": "fill with your telegram account username without @",
             "required": true,
-            "value": "https://telegra.ph/file/d8db78924684b505c3048.jpg"
+            "value": "https://iili.io/JQdc5rb.jpg"
         },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
