@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-
-# Kanged By © @Dr_Asad_Ali
-# Rocks © @Shayri_Music_Lovers
-# Owner Asad Ali
-# Harshit Sharma
-# All rights reserved. Yukki
-
 import os
 import time
 from datetime import datetime, timedelta
@@ -51,10 +41,10 @@ class TeleAPI:
         try:
             file_name = file.file_name
             if file_name is None:
-                file_name = "Telegram Audio File" if audio else "Telegram Video File"
+                file_name = "Telegram ses dosyası" if audio else "Telegram Video dosyası"
 
         except:
-            file_name = "Telegram Audio File" if audio else "Telegram Video File"
+            file_name = "Telegram ses dosyası" if audio else "Telegram Video dosyası"
         return file_name
 
     async def get_duration(self, file):
