@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-
-# Kanged By © @Dr_Asad_Ali
-# Rocks © @Shayri_Music_Lovers
-# Owner Asad Ali
-# Harshit Sharma
-# All rights reserved. Yukki
-
 import sys
 
 from pyrogram import Client
@@ -58,19 +48,19 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("AsadSupport")
-                await self.one.join_chat("AsadSupport")
-                await self.one.join_chat("AsadSupport")
+                await self.one.join_chat("gorilsupport")
+                await self.one.join_chat("gorilsupport")
+                await self.one.join_chat("gorilsupport")
             except:
                 pass
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started At Alexa Server"
+                    config.LOG_GROUP_ID, "GorilMusic server başladı"
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"Asistan Hesabı 1, günlük grubuna erişemedi. Lütfen asistanınızı günlük grubunuza eklediğinizden ve yönetici olarak atadığınızdan emin olun! "
                 )
                 sys.exit()
             get_me = await self.one.get_me()
@@ -85,19 +75,19 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("AsadSupport")
-                await self.two.join_chat("AsadSupport")
-                await self.two.join_chat("AsadSupport")
+                await self.two.join_chat("GorilSupport")
+                await self.two.join_chat("GorilSupport")
+                await self.two.join_chat("GorilSupport")
             except:
                 pass
             assistants.append(2)
             try:
                 await self.two.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started At Alexa Server"
+                    config.LOG_GROUP_ID, "GorilMusic server başladı"
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"Asistan Hesabı 2, günlük grubuna erişemedi. Lütfen asistanınızı günlük grubunuza eklediğinizden ve yönetici olarak atadığınızdan emin olun! "
                 )
                 sys.exit()
             get_me = await self.two.get_me()
@@ -108,23 +98,23 @@ class Userbot(Client):
                 self.two.name = get_me.first_name + " " + get_me.last_name
             else:
                 self.two.name = get_me.first_name
-            LOGGER(__name__).info(f"Assistant Two Started as {self.two.name}")
+            LOGGER(__name__).info(f"ikinci asistan başladı as {self.two.name}")
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("AsadSupport")
-                await self.three.join_chat("AsadSupport")
-                await self.three.join_chat("AsadSupport")
+                await self.three.join_chat("gorilSupport")
+                await self.three.join_chat("gorilSupport")
+                await self.three.join_chat("gorilSupport")
             except:
                 pass
             assistants.append(3)
             try:
                 await self.three.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started At Alexa Server"
+                    config.LOG_GROUP_ID, "gorilmusic server başladı"
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"Asistan Hesabı 3, günlük grubuna erişemedi. Lütfen asistanınızı günlük grubunuza eklediğinizden ve yönetici olarak atadığınızdan emin olun! "
                 )
                 sys.exit()
             get_me = await self.three.get_me()
@@ -135,23 +125,23 @@ class Userbot(Client):
                 self.three.name = get_me.first_name + " " + get_me.last_name
             else:
                 self.three.name = get_me.first_name
-            LOGGER(__name__).info(f"Assistant Three Started as {self.three.name}")
+            LOGGER(__name__).info(f"üçüncü bot başladı {self.three.name}")
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("AsadSupport")
-                await self.four.join_chat("AsadSupport")
-                await self.four.join_chat("AsadSupport")
+                await self.four.join_chat("gorilSupport")
+                await self.four.join_chat("gorilSupport")
+                await self.four.join_chat("gorilSupport")
             except:
                 pass
             assistants.append(4)
             try:
                 await self.four.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started At Alexa Server"
+                    config.LOG_GROUP_ID, "gorilmüzik asistan server başladı"
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f""Asistan Hesabı 4, günlük grubuna erişemedi. Lütfen asistanınızı günlük grubunuza eklediğinizden ve yönetici olarak atadığınızdan emin olun!" "
                 )
                 sys.exit()
             get_me = await self.four.get_me()
@@ -162,23 +152,23 @@ class Userbot(Client):
                 self.four.name = get_me.first_name + " " + get_me.last_name
             else:
                 self.four.name = get_me.first_name
-            LOGGER(__name__).info(f"Assistant Four Started as {self.four.name}")
+            LOGGER(__name__).info(f"asistan başladı {self.four.name}")
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("AsadSupport")
-                await self.five.join_chat("AsadSupport")
-                await self.five.join_chat("AsadSupport")
+                await self.five.join_chat("gorilSupport")
+                await self.five.join_chat("gorilSupport")
+                await self.five.join_chat("gorilSupport")
             except:
                 pass
             assistants.append(5)
             try:
                 await self.five.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started At Alexa Server"
+                    config.LOG_GROUP_ID, "goril müzik asistan server başladı"
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f""Asistan Hesabı 5, günlük grubuna erişemedi. Lütfen asistanınızı günlük grubunuza eklediğinizden ve yönetici olarak atadığınızdan emin olun!" "
                 )
                 sys.exit()
             get_me = await self.five.get_me()
