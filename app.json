@@ -39,7 +39,7 @@
         "required": true
       },
       "MUSIC_BOT_NAME": {
-        "description": "Müzik Botu için bir isim. Lütfen ASCII karakterlerini kullanmayın.",
+        "description": "Müzik Botu için bir isim. Lütfen ASCII karakterlerini kullanmayın..",
         "value": "",
         "required": true
       },
