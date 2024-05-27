@@ -1,13 +1,4 @@
 #
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-
-# Kanged By © @Dr_Asad_Ali
-# Rocks © @Shayri_Music_Lovers
-# Owner Asad Ali
-# Harshit Sharma
-# All rights reserved. Yukki
-
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython import VideosSearch
@@ -41,13 +32,13 @@ async def start_comm(client, message: Message, _):
     await add_served_user(message.from_user.id)
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
-        if name[0:4] == "help":
+        if name[0:4] == "yardım":
             keyboard = help_pannel(_)
             return await message.reply_text(_["help_1"], reply_markup=keyboard)
-        if name[0:4] == "song":
+        if name[0:4] == "şarkı":
             return await message.reply_text(_["song_2"])
-        if name[0:3] == "sta":
-            m = await message.reply_text("🔎 Fetching your personal stats.!")
+        if name[0:3] == "statü":
+            m = await message.reply_text("🔎 kişisel istatistikler getiriliyor")
             stats = await get_userss(message.from_user.id)
             tot = len(stats)
             if tot > 10:
@@ -96,7 +87,7 @@ async def start_comm(client, message: Message, _):
                 sender_name = message.from_user.first_name
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    f"{message.from_user.mention} has just started bot to check <code>SUDOLIST</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+                    f"{message.from_user.mention} bot başladığı kontrol ediliyor k <code>SUDOLIST</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
                 )
             return
         if name[0:3] == "lyr":
@@ -107,10 +98,10 @@ async def start_comm(client, message: Message, _):
                 return await Telegram.send_split_text(message, lyrics)
             else:
                 return await message.reply_text("Failed to get lyrics.")
-        if name[0:3] == "del":
+        if name[0:3] == "sil":
             await del_plist_msg(client=client, message=message, _=_)
-        if name[0:3] == "inf":
-            m = await message.reply_text("🔎 Fetching Info!")
+        if name[0:3] == "bilgi":
+            m = await message.reply_text("🔎Bilgi Alınıyor")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -124,23 +115,23 @@ async def start_comm(client, message: Message, _):
                 link = result["link"]
                 published = result["publishedTime"]
             searched_text = f"""
-🔍__**Video Track Information**__
+🔍__**Video Parça Bilgileri"**__
 
-❇️**Title:** {title}
+❇️**Başlık:** {title}
 
-⏳**Duration:** {duration} Mins
-👀**Views:** `{views}`
-⏰**Published Time:** {published}
-🎥**Channel Name:** {channel}
-📎**Channel Link:** [Visit From Here]({channellink})
-🔗**Video Link:** [Link]({link})
+⏳**Süre:** {duration} Mins
+👀**Görüntülenme:** `{views}`
+⏰**Yayınlanma Zamanı:** {published}
+🎥**Kanal Adı:** {channel}
+📎**Kanal Linki:** [Visit From Here]({channellink})
+🔗**Video Linki:** [Link]({link})
 
 ⚡️ __Searched Powered By {config.MUSIC_BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="🎥 Watch ", url=f"{link}"),
-                        InlineKeyboardButton(text="🔄 Close", callback_data="close"),
+                        InlineKeyboardButton(text="🎥 İzle ", url=f"{link}"),
+                        InlineKeyboardButton(text="🔄 Kapat", callback_data="Kapat"),
                     ],
                 ]
             )
@@ -193,7 +184,7 @@ async def start_comm(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(get_command("START_COMMAND")) & filters.group & ~BANNED_USERS
+    filters.command(get_command("başlat")) & filters.group & ~BANNED_USERS
 )
 @language
 async def testbot(client, message: Message, _):
@@ -224,7 +215,7 @@ async def welcome(client, message: Message):
             _ = get_string(language)
             if member.id == app.id:
                 chat_type = message.chat.type
-                if chat_type != "supergroup":
+                if chat_type != "supergrup":
                     await message.reply_text(_["start_6"])
                     return await app.leave_chat(message.chat.id)
                 userbot = await get_assistant(message.chat.id)
