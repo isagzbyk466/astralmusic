@@ -1,8 +1,8 @@
 <h1 align="center"><b>✨𝗚𝗼𝗿𝗶𝗹 𝗠𝘂𝘇𝗶𝗸✨</b></h1>
 
-<h4 align="center">Goril Müzik Sizlere Kaliteli Müzik ve video izleme deneyimi sunar br> </h4>
+<h4 align="center">Telegramın En Kaliteli Müzik Botu<br> ...All Credit Goes To Team Yukki...</h4>
 
-<p align="center"><a href="@gorilmusical"><img src="https://iili.io/JQdc5rb.jpg" width="400"></a></p>
+<p align="center"><a href="https://t.me/"><img src="https://iili.io/JQdc5rb.jpg" width="400"></a></p>
 
 <p align="center">
     <a href="https://app.codacy.com/manual/TheTeamAlexa/AasthaTGMusicBot/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
@@ -13,9 +13,18 @@
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
+> ⭐️ Thanks to everyone for using Alexa Server, That is the greatest pleasure we have !
 
+### Asad– History This Bot Is Clone On [Team Yukki](https://github.com/TeamYukki)
 
 <a href="https://www.youtube.com/JankariKiDuniya"><img src="https://img.shields.io/badge/Join-Subscribe%20Support-blue.svg?style=for-the-badge&logo=YouTube"></a>
+
+## Features ❤️”®
+
+- Gban Added By [Me](https://t.me/Alexa_Help)
+- Automatically Thambnail Generator By [Team Yukki](https://github.com/TeamYukki)
+- Customize Button Added [Me](https://t.me/Alexa_Help)
+- Channel Stream Added 
 
 # ᴅᴇᴘʟᴏʏᴍᴇɴᴛ
 
@@ -68,12 +77,7 @@
 <summary><b>ᴄʀᴇᴅɪᴛ</b></summary>
 <br>
 
-## sᴘᴇᴄɪᴀʟ ᴄʀᴇᴅɪᴛ
 
-- [ᴀsᴀᴅ ᴀʟɪ](https://t.me/Dr_Asad_Ali)
-- [ʜᴀʀsʜɪᴛ](https://t.me/HarshitSharma361)
-- [Abhimanyu](https://t.me/Itz_Venom_xD)
-- [ʏᴜᴋᴋɪ](https://github.com/NotReallyShikhar)
 
 </details>
 
@@ -81,14 +85,20 @@
 <summary><b>ʙʀᴏᴛʜᴇʀ</b></summary>
 <br>
 
-- [ᴍᴜᴋᴜ](https://t.me/LEGEND_MUKUND)
-- [ᴅᴇᴠɪʟ](https://t.me/its_devil_911)
+- [ᴍᴜᴋᴜ](https://t.me/)
+- [ᴅᴇᴠɪʟ](https://t.me/)
 
 </details>
 
 <details>
 <summary><b>sᴜᴘᴘᴏʀᴛ</b></summary>
 <br>
+
+# ❤️ Support
+<a href="https://t.me/AsadSupport"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="https://t.me/Shayri_Music_Lovers"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/Give_Me_Heart"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
+<a href="https://t.me/Alexa_Help"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
 
 </details>
 
