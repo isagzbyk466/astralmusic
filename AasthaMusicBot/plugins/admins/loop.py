@@ -1,13 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-
-# Kanged By © @Dr_Asad_Ali
-# Rocks © @Shayri_Music_Lovers
-# Owner Asad Ali
-# Harshit Sharma
-# All rights reserved. Yukki
-
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -42,12 +32,12 @@ async def admins(cli, message: Message, _, chat_id):
             )
         else:
             return await message.reply_text(_["admin_26"])
-    elif state.lower() == "enable":
+    elif state.lower() == "aktif":
         await set_loop(chat_id, 10)
         return await message.reply_text(
             _["admin_25"].format(message.from_user.first_name, state)
         )
-    elif state.lower() == "disable":
+    elif state.lower() == "devre dışı":
         await set_loop(chat_id, 0)
         return await message.reply_text(_["admin_27"])
     else:
